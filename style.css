@@ -1,0 +1,108 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Game card styling */
+.game-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+/* Paragraph */
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Input */
+input[type="number"] {
+  padding: 12px 15px;
+  font-size: 1.2em;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  box-shadow: inset 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Button */
+button {
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  transform: translateY(-3px);
+}
+
+#message {
+  margin-top: 25px;
+  font-size: 1.2em;
+  font-weight: 500;
+  min-height: 30px;
+}
+
+.success {
+  color: #00ff95;
+  font-weight: bold;
+}
+
+.error {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+#chances {
+  margin-top: 15px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* Replay button */
+#replayBtn {
+  display: none;
+  margin-top: 25px;
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  color: black;
+}
+
+#replayBtn:hover {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+}
